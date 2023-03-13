@@ -1,5 +1,4 @@
-FROM python:3.8.13-slim-buster
-
+FROM python:3.8.3-alpine
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
