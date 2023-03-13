@@ -5,7 +5,7 @@ import uuid
 from django.http import HttpResponse
 
 def index(request):
-    client = boto3.client('dynamodb')
+    client = boto3.client('dynamodb', region_name='us-east-1')
     unique_id = uuid.uuid4()
     response = client.put_item(
         TableName='avivTable',
